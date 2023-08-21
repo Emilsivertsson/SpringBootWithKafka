@@ -12,6 +12,6 @@ public class KafkaConsumer {
 
     @KafkaListener(topics = "javaguides", groupId = "myGroup")
     public void consume(String message) {
-        Logger.info(String.format("Consumed message: %s", message));
+        Logger.info(String.format("Consumed message:" + message));
     }
 }
